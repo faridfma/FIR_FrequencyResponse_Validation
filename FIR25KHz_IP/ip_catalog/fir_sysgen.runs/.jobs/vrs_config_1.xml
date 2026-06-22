@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fir_sysgen_bd_fir_sysgen_1_0_synth_1" LaunchDir="C:/Users/fmabrouk/Documents/YT/FIR_25KHz_SysGen/FIR25KHz_IP/ip_catalog/fir_sysgen.runs/fir_sysgen_bd_fir_sysgen_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/fmabrouk/Documents/YT/FIR_25KHz_SysGen/FIR25KHz_IP/ip_catalog/fir_sysgen.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fir_sysgen_bd_fir_sysgen_1_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

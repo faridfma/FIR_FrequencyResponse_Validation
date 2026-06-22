@@ -1,0 +1,465 @@
+
+*** Running vivado
+    with args -log FIR_TopLevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_TopLevel.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source FIR_TopLevel.tcl -notrace
+Command: synth_design -top FIR_TopLevel -part xc7s50csga324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6492 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 457.527 ; gain = 94.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_TopLevel' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/VHDL/FIR25KHz_TL.vhd:23]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/.Xil/Vivado-7736-lvanoffice-208/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'PLL' of component 'clk_wiz_0' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/VHDL/FIR25KHz_TL.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/.Xil/Vivado-7736-lvanoffice-208/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'ila_0' declared at 'C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/.Xil/Vivado-7736-lvanoffice-208/realtime/ila_0_stub.vhdl:5' bound to instance 'ILa' of component 'ila_0' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/VHDL/FIR25KHz_TL.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/.Xil/Vivado-7736-lvanoffice-208/realtime/ila_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'DDS_Sig_Gen' declared at 'C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/sources_1/imports/VHDL/DDS_In.vhd:5' bound to instance 'DDS_Sweep' of component 'DDS_Sig_Gen' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/VHDL/FIR25KHz_TL.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'DDS_Sig_Gen' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/sources_1/imports/VHDL/DDS_In.vhd:16]
+INFO: [Synth 8-3491] module 'dds_compiler_0' declared at 'C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/.Xil/Vivado-7736-lvanoffice-208/realtime/dds_compiler_0_stub.vhdl:5' bound to instance 'DDS_Sweep' of component 'dds_compiler_0' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/sources_1/imports/VHDL/DDS_In.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'dds_compiler_0' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/.Xil/Vivado-7736-lvanoffice-208/realtime/dds_compiler_0_stub.vhdl:16]
+INFO: [Synth 8-256] done synthesizing module 'DDS_Sig_Gen' (1#1) [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/sources_1/imports/VHDL/DDS_In.vhd:16]
+INFO: [Synth 8-3491] module 'fir_25KHz' declared at 'C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/.Xil/Vivado-7736-lvanoffice-208/realtime/fir_25KHz_stub.vhdl:5' bound to instance 'FIR_IPcore' of component 'fir_25KHz' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/VHDL/FIR25KHz_TL.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'fir_25KHz' [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/.Xil/Vivado-7736-lvanoffice-208/realtime/fir_25KHz_stub.vhdl:17]
+WARNING: [Synth 8-6014] Unused sequential element valid_flag_clear_reg was removed.  [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/VHDL/FIR25KHz_TL.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'FIR_TopLevel' (2#1) [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/VHDL/FIR25KHz_TL.vhd:23]
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Clk
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Data_In[7]
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Data_In[6]
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Data_In[5]
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Data_In[4]
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Data_In[3]
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Data_In[2]
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Data_In[1]
+WARNING: [Synth 8-3331] design DDS_Sig_Gen has unconnected port ADC_Data_In[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 513.844 ; gain = 150.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 513.844 ; gain = 150.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 513.844 ; gain = 150.469
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s50csga324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/sources_1/ip/fir_25KHz/fir_25KHz/fir_25KHz_in_context.xdc] for cell 'FIR_IPcore'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/sources_1/ip/fir_25KHz/fir_25KHz/fir_25KHz_in_context.xdc] for cell 'FIR_IPcore'
+Parsing XDC File [c:/Users/fmabrouk/Documents/faridFMfolder/MyFIR/clk_wiz_0_6/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'PLL'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/faridFMfolder/MyFIR/clk_wiz_0_6/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'PLL'
+Parsing XDC File [c:/Users/fmabrouk/Documents/faridFMfolder/MyFIR/ila_0_3/ila_0/ila_0_in_context.xdc] for cell 'ILa'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/faridFMfolder/MyFIR/ila_0_3/ila_0/ila_0_in_context.xdc] for cell 'ILa'
+Parsing XDC File [c:/Users/fmabrouk/Documents/faridFMfolder/MyFIR/dds_compiler_0_9/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'DDS_Sweep/DDS_Sweep'
+Finished Parsing XDC File [c:/Users/fmabrouk/Documents/faridFMfolder/MyFIR/dds_compiler_0_9/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'DDS_Sweep/DDS_Sweep'
+Parsing XDC File [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out2*'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:12]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out5*'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:12]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out5*'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:13]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:13]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out2*'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:13]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:13]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out2*'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:15]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:15]
+WARNING: [Vivado 12-508] No pins matched '*FM_audio_sync1_reg[*]/D'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[11]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:282]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[10]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:283]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[9]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:284]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[8]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:285]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[7]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:286]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[6]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:287]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[5]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:288]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[4]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[3]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:290]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[2]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:291]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[1]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:292]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[0]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:293]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[0]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:295]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[1]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:296]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[2]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:297]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[3]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:298]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[4]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:299]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[5]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:300]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[6]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:301]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[7]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:302]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[8]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:303]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[9]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:304]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[10]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:305]
+WARNING: [Vivado 12-584] No ports matched 'Dac_Out[11]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:306]
+WARNING: [Vivado 12-584] No ports matched 'BCK'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:308]
+WARNING: [Vivado 12-584] No ports matched 'Audio_out'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:309]
+WARNING: [Vivado 12-584] No ports matched 'Wsel_pin'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:310]
+WARNING: [Vivado 12-584] No ports matched 'BCK'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:312]
+WARNING: [Vivado 12-584] No ports matched 'Audio_out'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:313]
+WARNING: [Vivado 12-584] No ports matched 'Wsel_pin'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:314]
+WARNING: [Vivado 12-584] No ports matched 'FreqSel[0]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:319]
+WARNING: [Vivado 12-584] No ports matched 'FreqSel[1]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:320]
+WARNING: [Vivado 12-584] No ports matched 'FreqSel[2]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:321]
+WARNING: [Vivado 12-584] No ports matched 'FreqSel[3]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:322]
+WARNING: [Vivado 12-584] No ports matched 'FreqSel[0]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:324]
+WARNING: [Vivado 12-584] No ports matched 'FreqSel[1]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:325]
+WARNING: [Vivado 12-584] No ports matched 'FreqSel[2]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:326]
+WARNING: [Vivado 12-584] No ports matched 'FreqSel[3]'. [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc:327]
+Finished Parsing XDC File [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/FIR_TopLevel_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.srcs/constrs_1/imports/VHDL/ArtyS7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIR_TopLevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIR_TopLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.387 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.387 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 840.387 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'FIR_IPcore' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ILa' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'DDS_Sweep/DDS_Sweep' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 840.387 ; gain = 477.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 840.387 ; gain = 477.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/fmabrouk/Documents/faridFMfolder/MyFIR/clk_wiz_0_6/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/fmabrouk/Documents/faridFMfolder/MyFIR/clk_wiz_0_6/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for FIR_IPcore. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for PLL. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ILa. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DDS_Sweep/DDS_Sweep. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 840.387 ; gain = 477.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ADC_Data_In_sync1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "step_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FIR_TopLevel'
+INFO: [Synth 8-5544] ROM "WriteEnable_IntSig" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Dac_Out_temp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "FIR_OutScaled" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ChipSeclect_n_sig" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 | 00000000000000000000000000000000
+                 iSTATE0 |                             0010 | 00000000000000000000000000000001
+                 iSTATE1 |                             0100 | 00000000000000000000000000000010
+                 iSTATE2 |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FIR_TopLevel'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 840.387 ; gain = 477.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FIR_TopLevel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+Module DDS_Sig_Gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "DDS_Sweep/ADC_Data_In_sync1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DDS_Sweep/step_count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design FIR_TopLevel has unconnected port ADC_Data_In[7]
+WARNING: [Synth 8-3331] design FIR_TopLevel has unconnected port ADC_Data_In[6]
+WARNING: [Synth 8-3331] design FIR_TopLevel has unconnected port ADC_Data_In[5]
+WARNING: [Synth 8-3331] design FIR_TopLevel has unconnected port ADC_Data_In[4]
+WARNING: [Synth 8-3331] design FIR_TopLevel has unconnected port ADC_Data_In[3]
+WARNING: [Synth 8-3331] design FIR_TopLevel has unconnected port ADC_Data_In[2]
+WARNING: [Synth 8-3331] design FIR_TopLevel has unconnected port ADC_Data_In[1]
+WARNING: [Synth 8-3331] design FIR_TopLevel has unconnected port ADC_Data_In[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DDS_Sweep/s_axis_phase_tdata_sig_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\DDS_Sweep/s_axis_phase_tvalid_sig_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 840.387 ; gain = 477.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'PLL/clk_out1' to pin 'PLL/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'PLL/clk_out2' to pin 'PLL/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'PLL/clk_out3' to pin 'PLL/bbstub_clk_out3/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 840.387 ; gain = 477.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 855.980 ; gain = 492.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 857.152 ; gain = 493.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 857.152 ; gain = 493.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 857.152 ; gain = 493.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 857.152 ; gain = 493.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 857.152 ; gain = 493.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 857.152 ; gain = 493.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 857.152 ; gain = 493.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |clk_wiz_0      |         1|
+|2     |ila_0          |         1|
+|3     |fir_25KHz      |         1|
+|4     |dds_compiler_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |clk_wiz_0_bbox_0      |     1|
+|2     |dds_compiler_0_bbox_2 |     1|
+|3     |fir_25KHz_bbox_3      |     1|
+|4     |ila_0_bbox_1          |     1|
+|5     |CARRY4                |    13|
+|6     |LUT1                  |     9|
+|7     |LUT2                  |    54|
+|8     |LUT3                  |    18|
+|9     |LUT4                  |    44|
+|10    |LUT5                  |     7|
+|11    |LUT6                  |    14|
+|12    |FDCE                  |   164|
+|13    |FDPE                  |    12|
+|14    |FDRE                  |    12|
+|15    |IBUF                  |     1|
+|16    |OBUF                  |    15|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+------------+------------+------+
+|      |Instance    |Module      |Cells |
++------+------------+------------+------+
+|1     |top         |            |   409|
+|2     |  DDS_Sweep |DDS_Sig_Gen |   251|
++------+------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 857.152 ; gain = 493.777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 857.152 ; gain = 167.234
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 857.152 ; gain = 493.777
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 857.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 857.152 ; gain = 495.520
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 857.152 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/synth_1/FIR_TopLevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FIR_TopLevel_utilization_synth.rpt -pb FIR_TopLevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 20 17:58:04 2026...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun 20 17:58:14 2026
+# Process ID: 19136
+# Current directory: C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/impl_1
+# Command line: vivado.exe -log FIR_TopLevel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FIR_TopLevel.tcl -notrace
+# Log file: C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/impl_1/FIR_TopLevel.vdi
+# Journal file: C:/Users/fmabrouk/Documents/YT/FIR_25KHz_DAC/FIR_25kHz/FIR_25K/FIR_25K.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source FIR_TopLevel.tcl -notrace

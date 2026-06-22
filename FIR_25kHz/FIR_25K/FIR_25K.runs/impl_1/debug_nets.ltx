@@ -1,0 +1,162 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "200000001"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "ILa",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "E1EE1318C2EA5A86B2171B32E16538F0",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "FIR_in",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "FIR_in[7]"
+                                            },
+                                            {
+                                                "name": "FIR_in[6]"
+                                            },
+                                            {
+                                                "name": "FIR_in[5]"
+                                            },
+                                            {
+                                                "name": "FIR_in[4]"
+                                            },
+                                            {
+                                                "name": "FIR_in[3]"
+                                            },
+                                            {
+                                                "name": "FIR_in[2]"
+                                            },
+                                            {
+                                                "name": "FIR_in[1]"
+                                            },
+                                            {
+                                                "name": "FIR_in[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "FIR_OutScaled",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "FIR_OutScaled[11]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[10]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[9]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[8]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[7]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[6]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[5]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[4]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[3]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[2]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[1]"
+                                            },
+                                            {
+                                                "name": "FIR_OutScaled[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "ChipSeclect_n_sig",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "FIR_sample_valid_in",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

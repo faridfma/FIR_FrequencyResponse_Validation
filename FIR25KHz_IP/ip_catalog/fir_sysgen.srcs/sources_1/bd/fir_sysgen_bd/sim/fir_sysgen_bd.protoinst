@@ -1,0 +1,17 @@
+{
+	"version": "1.0",
+	"modules": {
+		"fir_sysgen_bd": {
+			"proto_instances": {
+				"/fir_sysgen_1/data_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TREADY": { "actual": "data_tready_out"},
+						"TVALID": { "actual": "data_tvalid_out"}
+					}
+				}
+			}
+		}
+	}
+}

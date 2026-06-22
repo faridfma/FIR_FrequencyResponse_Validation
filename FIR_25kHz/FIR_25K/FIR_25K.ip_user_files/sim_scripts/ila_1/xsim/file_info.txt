@@ -1,0 +1,2 @@
+ila_1.vhd,vhdl,xil_defaultlib,../../../../../../../../faridFMfolder/MyFIR/ila_1/sim/ila_1.vhd,incdir="../../../../../../../../faridFMfolder/MyFIR/ila_1/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

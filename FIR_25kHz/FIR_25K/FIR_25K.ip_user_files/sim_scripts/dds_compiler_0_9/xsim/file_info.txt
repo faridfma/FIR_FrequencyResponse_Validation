@@ -1,0 +1,2 @@
+dds_compiler_0.vhd,vhdl,xil_defaultlib,../../../../../../../../faridFMfolder/MyFIR/dds_compiler_0_9/sim/dds_compiler_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../../../../../faridFMfolder/MyFIR/ila_1/sim/ila_1.vhd" \
+
+nosort
