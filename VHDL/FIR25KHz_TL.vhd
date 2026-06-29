@@ -158,16 +158,6 @@ PORT MAP (
     m_axis_data_tdata  => FIR_tdata_out
   );
 
---Adder: c_addsub_0
---  PORT MAP (
---    A => Cos_5KHz_Waveform,
---    B => Cos_1MHz_Waveform,
---    CLK => clk200MHz,
---    S => Mixed_Signal
---  );
- 
--- this is used with DDS
---fir_out <= m_axis_data_tdata_Sig(31 downto 20); 
 
 process(clk200MHz, reset)
 begin
@@ -179,11 +169,11 @@ begin
         adc_sync2_prev      <= '0';
         FIR_sample_valid_in <= '0';
     elsif rising_edge(clk200MHz) then
-        -- two flop synchronizer for data
+        -- two flop for data
         FIR_in_Sync <= ADC_Data_Out_IntSig;   
         FIR_in <= FIR_in_Sync;
         
-        -- two flop synchronizer for valid toggle
+        -- two flop for valid toggle
         adc_sync1      <= ADC_data_valid_Sig;
         adc_sync2      <= adc_sync1;
         adc_sync2_prev <= adc_sync2;
@@ -209,16 +199,14 @@ begin
         FIR_OutScaled      <= (others => '0');
         state_counter      <= 0;
         state              <= 0;
---    elsif FIR_data_out_valid = '1' then
---        valid_flag <= '1';
+
     elsif rising_edge(clk200MHz) then
 
         case state is
 
             when 0 =>
-                --if valid_flag = '1' then
+    
                 if FIR_data_out_valid = '1' then
-                    --valid_flag_clear <= '1';   -- acknowledge
                     
                     ChipSeclect_n_sig  <= '0';
                     WriteEnable_IntSig <= '0';
