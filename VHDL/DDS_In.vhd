@@ -7,7 +7,7 @@ entity DDS_Sig_Gen is
         ADC_Clk          : in  std_logic;
         DDS_Clk          : in  std_logic;
         reset            : in  std_logic;
-         ADC_Data_In     : in  std_logic_vector(7 downto 0); 
+        ADC_Data_In      : in  std_logic_vector(7 downto 0); 
         ADC_data_valid   : out std_logic;  
         ADC_Data_In_out  : out std_logic_vector(7 downto 0)  
     ); 

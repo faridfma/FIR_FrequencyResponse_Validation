@@ -193,31 +193,7 @@ begin
     end if;
 end process;
 
-----------------------------------------------------------------------
--- Separate registered process to catch the pulse: FIR_data_out_valid
-----------------------------------------------------------------------
---process(clk200MHz,reset)
---begin
---     if reset = '1' then
---     valid_flag <= '0';
---     elsif rising_edge(clk200MHz) then
---        if FIR_data_out_valid = '1' then
---            valid_flag <= '1';        -- latch it
---        elsif valid_flag_clear = '1' then
---            valid_flag <= '0';        -- clear after state machine uses it
---        end if;
---    end if;
---end process;
---process(FIR_data_out_valid, valid_flag_clear,reset)
---begin
---    if reset ='1' then
---      valid_flag <= '0';
---    elsif valid_flag_clear = '1' then
---        valid_flag <= '0';
---    elsif FIR_data_out_valid = '1' then
---        valid_flag <= '1';
---    end if;
---end process;
+
 ------------------------------------------------------------------
 ----This Process implements a state machine that write to the DAC
 ---- AD5445
